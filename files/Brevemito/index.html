@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Brevemito - Campeonato da Katembe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #e6f2ff;
+        }
+
+        .navbar {
+            background-color: #004080;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #3399ff;
+        }
+
+        .patrocinadores {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #cfd8dc;
+        }
+
+        .patrocinadores h3 {
+            margin-bottom: 10px;
+            color: #003366;
+        }
+
+        .patrocinadores img {
+            height: 60px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        .apoio {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background-color: #ffffffcc;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .apoio h4 {
+            margin: 0 0 5px;
+            color: #003366;
+        }
+
+        .banner {
+            background-image: url('banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .banner h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 4px black;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin: 0;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .aviso {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 14px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            border-bottom: 2px solid #d4ac0d;
+        }
+
+        .conteudo {
+            padding: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        .conteudo p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .apoio {
+                position: static;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="apoio">
+        <h4>Apoie o Brevemito</h4>
+        <p><strong>M-Pesa:</strong> +258 84 48 13 814<br>
+           <strong>e-Mola:</strong> +258 87 22 15 282</p>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html">Início</a>
+        <a href="resultados.html">Resultados</a>
+        <a href="tabela.html">Tabela</a>
+        <a href="jogos.html">Próximos Jogos</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contactos.html">Contactos</a>
+    </div>
+
+    <div class="patrocinadores">
+        <h3>Patrocinadores Oficiais</h3>
+        <img src="logos/patrocinador1.jpeg" alt="Patrocinador 1">
+        <img src="logos/patrocinador2.jpeg" alt="Patrocinador 2">
+    </div>
+
+    <div class="banner">
+        <h1>Bem-vindo ao Brevemito</h1>
+        <p>Campeonato de Futebol Recreativo da Katembe</p>
+    </div>
+
+    <div class="aviso" id="aviso"></div>
+
+    <div class="conteudo">
+        <p>Este é o site oficial do campeonato recreativo da Katembe. Aqui você acompanha resultados atualizados, tabela de classificação, próximos jogos, galeria de fotos, notícias e muito mais. Participe, acompanhe e apoie o futebol comunitário!</p>
+    </div>
+
+    <footer>
+	<div style="border: 2px solid #0070ba; border-radius: 10px; padding: 20px; max-width: 400px; margin: 0 auto; text-align: center; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+  <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" style="width: 120px; margin-bottom: 15px;" />
+  <h3 style="color:ORANGE;">Apoie o Blog Brevemito 💙</h3>
+  <p style="font-size: 15px;">Gostou dos nossos conteúdos? Você pode contribuir com qualquer valor e ajudar a manter o blog no ar.</p>
+
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="margin-top: 15px;">
+    <input type="hidden" name="cmd" value="_xclick" />
+    <input type="hidden" name="business" value="GULAMOJAMAL@GMAIL.COM" />
+    <input type="hidden" name="item_name" value="Apoio ao blog Brevemito" />
+    <input type="hidden" name="currency_code" value="USD" />
+    
+    <label for="amount" style="font-size: 14px;">Valor (USD):</label><br />
+    <input type="text" name="amount" placeholder="Ex: 5" style="padding: 8px; margin: 10px 0; width: 80%; border-radius: 5px; border: 1px solid #ccc;" required />
+    
+    <br />
+    <input type="submit" value="Contribuir com PayPal" style="background-color: #0070ba; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 6px; cursor: pointer;" />
+  </form>
+</div>
+        <p>&copy; 2025 Brevemito - Katembe. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const avisos = [
+            "🏆 Próxima jornada: 24 de Maio",
+            "📊 Tabela atualizada na aba 'Tabela'",
+            "⚽ Veja os resultados anteriores em 'Resultados'",
+            "💚 Apoie o projeto via M-Pesa ou e-Mola!"
+        ];
+        let i = 0;
+        function trocarAviso() {
+            document.getElementById("aviso").innerText = avisos[i];
+            i = (i + 1) % avisos.length;
+        }
+        setInterval(trocarAviso, 4000);
+        trocarAviso();
+    </script>
+
+</body>
+</html>

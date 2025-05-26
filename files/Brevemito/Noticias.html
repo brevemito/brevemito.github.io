@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Notícias - Brevemito</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f2f6fc;
+        }
+
+        header, footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: #1abc9c;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #16a085;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .noticias {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .noticia {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .noticia:hover {
+            transform: translateY(-5px);
+        }
+
+        .noticia h3 {
+            color: #1e272e;
+            margin-top: 0;
+        }
+
+        .noticia p {
+            color: #555;
+        }
+
+        .noticia .data {
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Notícias do Brevemito</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="resultados.html">Resultados</a>
+        <a href="tabela.html">Tabela</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contactos.html">Contactos</a>
+        <a href="noticias.html">Notícias</a>
+    </nav>
+
+    <div class="container">
+        <h2>Últimas Atualizações</h2>
+        <div class="noticias">
+
+            <div class="noticia">
+                <div class="data">21 de Maio de 2025</div>
+                <h3>Coach Maduro multado a pagar 2000Mt por cuspir na cara do árbitro</h3>
+                <p>A multa vai além do valor a pagar, assim como mais 5 jogos de suspensão.</p>
+            </div>
+
+            <div class="noticia">
+                <div class="data">20 de Maio de 2025</div>
+                <h3>Tabela atualizada após a quinta jornada</h3>
+                <p>Palmeiras soma e se torna líder!</p>
+            </div>
+
+            <div class="noticia">
+                <div class="data">18 de Maio de 2025</div>
+                <h3>Botafogo vence jogo na mesa</h3>
+                <p>A Equipe do Botafogo foi atribuído os 3 pontos mesmo após empatar (1-1) diante de Aldeias, por suposta violação das leis do campeonato..</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Brevemito - Katembe. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
